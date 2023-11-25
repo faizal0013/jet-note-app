@@ -55,7 +55,6 @@ fun NotesApp(noteViewModel: NoteViewModel){
             noteViewModel.addNote(it)
         },
         onRemoveNote = {
-            Log.d("remove Note", it.toString())
             noteViewModel.removeNote(it)
         },
     )

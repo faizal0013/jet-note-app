@@ -34,6 +34,9 @@ class NoteViewModel @Inject constructor(private val noteRepository: NotRepositor
                     if(!listOfNotes.isNullOrEmpty()){
                         _noteList.value = listOfNotes
                     }
+                    else {
+                        _noteList.value = emptyList()
+                    }
                 }
         }
     }
